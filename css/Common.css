@@ -1,0 +1,3136 @@
+@charset "UTF-8";
+/**** RESET ****/
+@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+b,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+section,
+main,
+p,
+dt,
+dd,
+li,
+textarea,
+th,
+td,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", "Malgun Gothic", "Dotum", "Apple SD Gothic Neo",
+    sans-serif;
+  text-decoration: none;
+}
+
+main {
+  display: block;
+}
+
+img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+b {
+  font-weight: inherit;
+  vertical-align: baseline;
+  letter-spacing: inherit;
+}
+
+em {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+thead,
+tbody,
+tfoot,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  border-spacing: 0;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+}
+
+table caption {
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  font-family: "Noto Sans KR", "Malgun Gothic", "Dotum", "Sans-serif";
+}
+
+button span:first-child {
+  position: relative;
+}
+
+button:focus {
+  outline: none;
+}
+
+input,
+select {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: "Noto Sans KR", "Malgun Gothic", "Dotum", "Sans-serif";
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+select {
+  border: solid 1px transparent;
+  padding: 1px 25px 1px 2px;
+  cursor: pointer;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select option {
+  padding-right: 6px;
+}
+
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: solid 1px #b3b3b3;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+/***** Font *****/
+/***** FONT STYLE *****/
+/***** PATH *****/
+/***** COLOR *****/
+/** Mono Set **/
+/** Point Set **/
+/* catch pink */
+/* catch black */
+/* catch blue */
+/** header **/
+/** margin common **/
+/** form **/
+/** member for tablets and desktops  **/
+/***** MEDIA QUARY *****/
+/** Korean **/
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 300;
+  src: url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Light.eot");
+  src: url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Light.woff2")
+      format("woff2"),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Light.woff")
+      format("woff"),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Light.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: normal;
+  src: url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Regular.eot");
+  src: local(※),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Regular.woff2")
+      format("woff2"),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Regular.woff")
+      format("woff"),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Regular.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: bold;
+  src: url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Bold.eot");
+  src: local(※),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Bold.woff2")
+      format("woff2"),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Bold.woff")
+      format("woff"),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/NotoSansKR/NotoSansKR-Bold.ttf")
+      format("truetype");
+}
+
+/* Roboto */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://imgorg.catch.co.kr/job/catchapply/font/Roboto/Roboto-Light.woff2)
+      format("woff2"),
+    url(https://imgorg.catch.co.kr/job/catchapply/font/Roboto/Roboto-Light.woff)
+      format("woff"),
+    url(https://imgorg.catch.co.kr/job/catchapply/font/Roboto/Roboto-Light.otf)
+      format("opentype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://imgorg.catch.co.kr/job/catchapply/font/Roboto/Roboto-Regular.woff2)
+      format("woff2"),
+    url(https://imgorg.catch.co.kr/job/catchapply/font/Roboto/Roboto-Regular.woff)
+      format("woff"),
+    url(https://imgorg.catch.co.kr/job/catchapply/font/Roboto/Roboto-Regular.otf)
+      format("opentype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://imgorg.catch.co.kr/job/catchapply/font/Roboto/Roboto-Bold.woff2)
+      format("woff2"),
+    url(https://imgorg.catch.co.kr/job/catchapply/font/Roboto/Roboto-Bold.woff)
+      format("woff"),
+    url(https://imgorg.catch.co.kr/job/catchapply/font/Roboto/Roboto-Bold.otf)
+      format("opentype");
+}
+
+/** Icons **/
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://imgorg.catch.co.kr/job/catchapply/font/MaterialIcons/MaterialIcons-Regular.eot"); /* For IE6-8 */
+  src: local(
+      "https://imgorg.catch.co.kr/job/catchapply/font/MaterialIcons/Material Icons"
+    ),
+    local(
+      "https://imgorg.catch.co.kr/job/catchapply/font/MaterialIcons/MaterialIcons-Regular"
+    ),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/MaterialIcons/MaterialIcons-Regular.woff2")
+      format("woff2"),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/MaterialIcons/MaterialIcons-Regular.woff")
+      format("woff"),
+    url("https://imgorg.catch.co.kr/job/catchapply/font/MaterialIcons/MaterialIcons-Regular.ttf")
+      format("truetype");
+}
+
+.material-icons.size19 {
+  font-family: "Material Icons";
+  font-size: 19px !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr; /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased; /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility; /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale; /* Support for IE. */
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+}
+
+.material-icons.size21 {
+  font-family: "Material Icons";
+  font-size: 21px !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr; /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased; /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility; /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale; /* Support for IE. */
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+}
+
+.material-icons.size24 {
+  font-family: "Material Icons";
+  font-size: 24px !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr; /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased; /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility; /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale; /* Support for IE. */
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+}
+
+.material-icons.size27 {
+  font-family: "Material Icons";
+  font-size: 27px !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr; /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased; /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility; /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale; /* Support for IE. */
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+}
+
+.material-icons.size36 {
+  font-family: "Material Icons";
+  font-size: 36px !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr; /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased; /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility; /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale; /* Support for IE. */
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+}
+
+.material-icons.size50 {
+  font-family: "Material Icons";
+  font-size: 50px !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr; /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased; /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility; /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale; /* Support for IE. */
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+}
+
+.material-icons.size72 {
+  font-family: "Material Icons";
+  font-size: 72px !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr; /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased; /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility; /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale; /* Support for IE. */
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+}
+
+.material-icons.size180 {
+  font-family: "Material Icons";
+  font-size: 180px !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr; /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased; /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility; /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale; /* Support for IE. */
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+}
+
+.layerHTML {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1001;
+  padding: 10px;
+  background-color: #33cc33;
+  text-align: left;
+  color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+}
+
+.layerHTML:before {
+  content: "< 레이어 >";
+  display: block;
+  margin-bottom: 5px;
+}
+
+.layerHTML li,
+.layerHTML button,
+.layerHTML a {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.layerHTML li:before {
+  content: "·";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+@media all and (max-width: 1178px) {
+  .layerHTML {
+    display: none;
+  }
+}
+
+.listLayerView {
+  margin: 50px 0;
+}
+
+.listLayerView li {
+  list-style-type: decimal;
+  margin-top: 11px;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.listLayerView li a {
+  color: #1a1a1a;
+  vertical-align: text-bottom;
+}
+
+/* Layout */
+.main_wrapper,
+.wrapper {
+  min-width: 1180px;
+}
+
+@media screen and (max-width: 1180px) {
+  .main_wrapper,
+  .wrapper {
+    min-width: 1024px;
+  }
+}
+
+.corpwrap {
+  position: relative;
+  text-align: center;
+  min-width: 1180px;
+}
+
+.corpwrap .inner {
+  margin: 0 auto;
+  max-width: 1180px;
+  text-align: left;
+}
+
+.corpwrap.applicant {
+  background: url("https://imgorg.catch.co.kr/job/catchapply/app_detail_bg.gif")
+    repeat-x;
+  min-width: 1024px;
+}
+
+#corpTop {
+  background: #e6585a;
+  height: 30px;
+}
+
+#corpTop .logo {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 1px;
+}
+
+#corpTop .logo a {
+  vertical-align: baseline;
+}
+
+#corpTop .sub_tit {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+  color: #fff;
+  vertical-align: baseline;
+}
+
+#corpTop .util {
+  float: right;
+}
+
+#corpTop .util li {
+  float: left;
+  color: #f9d9d9;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  line-height: 28px;
+  padding-left: 30px;
+}
+
+#corpTop .util li a {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+#corpTop .util li .user {
+  cursor: pointer;
+}
+
+#corpTop .util li .user:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1px 10px;
+  background: url("https://imgorg.catch.co.kr/job/catchapply/corp_util_ico1.png")
+    no-repeat;
+  width: 12px;
+  height: 13px;
+}
+
+#corpGnB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  background: #fafafa;
+  height: 95px;
+}
+
+#corpGnB .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+
+#corpGnB .logo {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#corpGnB .logo .pic {
+  position: relative;
+  display: table-cell;
+  background: #fff;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#corpGnB .logo .pic img {
+  width: 45px;
+  height: 45px;
+}
+
+#corpGnB .logo .pic.noimg {
+  background: url("https://imgorg.catch.co.kr/job/catchapply/logo_base_sq.jpg")
+    no-repeat 50% 50%;
+  background-size: 45px auto;
+}
+
+#corpGnB .logo .txt {
+  display: table-cell;
+  padding-left: 15px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  cursor: pointer;
+}
+
+#corpGnB .logo .login_msg {
+  display: none;
+  padding-left: 25px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+}
+
+#corpGnB .logo .login_msg .bt_login {
+  display: inline-block;
+  vertical-align: middle;
+  border: solid 1px transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  line-height: normal;
+  vertical-align: baseline;
+  height: 24px;
+  line-height: 22px;
+  border-color: #808080;
+  font-size: 12px;
+  color: #e55355;
+  padding: 0 20px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+#corpGnB .logo .login_msg .bt_login:hover {
+  text-decoration: none;
+}
+
+#corpGnB .logo .login_msg .bt_login span {
+  display: inline-block;
+  margin-top: -3px;
+}
+
+#corpGnB .menu {
+  float: right;
+}
+
+#corpGnB .menu li {
+  float: left;
+  color: #595959;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  margin-right: 30px;
+  line-height: 93px;
+}
+
+#corpGnB .menu li:last-child {
+  margin-right: 0;
+}
+
+#corpGnB .menu li.selected {
+  color: #1a1a1a;
+}
+
+#corpGnB .menu li a {
+  display: inline-block;
+  height: 100%;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  position: relative;
+}
+
+#corpGnB .menu li a:hover {
+  color: #1a1a1a;
+}
+
+#corpGnB .menu li.now {
+  color: #e6585a;
+}
+
+#corpGnB .menu li.now:before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 12px;
+  background: #595959;
+  vertical-align: top;
+  margin: 43px 30px 0 0;
+}
+
+#corpGnB .menu li.now a:hover {
+  color: #e6585a;
+}
+
+#corpGnB .menu li.allmenu a {
+  display: block;
+  font-size: 0;
+  background: url("https://imgorg.catch.co.kr/job/catchapply/ico_menu.png")
+    no-repeat;
+  width: 14px;
+  height: 16px;
+  margin-top: 43px;
+  margin-left: 10px;
+}
+
+#corpGnB .menu li .submenu {
+  display: none;
+}
+
+#corpGnB .menu li .submenu::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  min-width: 1180px;
+  height: 68px;
+  background: #fff;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  z-index: 2;
+}
+
+#corpGnB .menu li .submenu .smenu {
+  position: absolute;
+  margin-left: 10px;
+  z-index: 3;
+}
+
+#corpGnB .menu li .submenu .smenu li {
+  display: inline-block;
+  margin-right: 30px;
+  line-height: 66px;
+}
+
+#corpGnB .menu li .submenu .smenu li a {
+  color: #595959;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+}
+
+#corpGnB .menu li .submenu .smenu li a:hover {
+  color: #1a1a1a;
+}
+
+#corpGnB .menu li .submenu .smenu li.selected a {
+  color: #1a1a1a;
+}
+
+#corpGnB .menu li .submenu .smenu li:last-child {
+  margin-right: 0;
+}
+
+#corpGnB .menu li.sm1.over a,
+#corpGnB .menu li.sm2.over a,
+#corpGnB .menu li.sm3.over a,
+#corpGnB .menu li.sm4.over a {
+  position: relative;
+}
+
+#corpGnB .menu li.sm1.over a:after,
+#corpGnB .menu li.sm2.over a:after,
+#corpGnB .menu li.sm3.over a:after,
+#corpGnB .menu li.sm4.over a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  background: #e6585a;
+}
+
+#corpGnB .menu li.sm1.over .submenu,
+#corpGnB .menu li.sm2.over .submenu,
+#corpGnB .menu li.sm3.over .submenu,
+#corpGnB .menu li.sm4.over .submenu {
+  display: block;
+}
+
+#corpGnB .menu li.sm1.over .submenu .smenu a:after,
+#corpGnB .menu li.sm2.over .submenu .smenu a:after,
+#corpGnB .menu li.sm3.over .submenu .smenu a:after,
+#corpGnB .menu li.sm4.over .submenu .smenu a:after {
+  display: none;
+}
+
+#corpGnB .menu li.sm1.over a:after,
+#corpGnB .menu li.sm2.over a:after,
+#corpGnB .menu li.sm3.over a:after,
+#corpGnB .menu li.sm4.over a:after {
+  z-index: 3;
+}
+
+#corpGnB .menu li.sm1.over .submenu,
+#corpGnB .menu li.sm2.over .submenu,
+#corpGnB .menu li.sm3.over .submenu,
+#corpGnB .menu li.sm4.over .submenu {
+  z-index: 2;
+}
+
+#corpGnB .menu li.sm3 .smenu {
+  margin-left: -220px;
+}
+
+#corpGnB .header_admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+  vertical-align: top;
+}
+
+#corpGnB .header_admin .input_box3 input {
+  border: 1px solid #c2c2c2;
+  padding: 0 10px;
+  height: 30px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  width: 80px;
+  background: #fff;
+}
+
+#corpGnB .header_admin .input_box3 input:disabled {
+  background: #f1f1f1;
+}
+
+#corpGnB .header_admin .input_box3 input.placeholder {
+  color: #b2b2b2 !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+}
+
+#corpGnB .header_admin .input_box3 input:-moz-placeholder {
+  color: #b2b2b2 !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+}
+
+#corpGnB .header_admin .input_box3 input::-moz-placeholder {
+  color: #b2b2b2 !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+}
+
+#corpGnB .header_admin .input_box3 input:-ms-input-placeholder {
+  color: #b2b2b2 !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+}
+
+#corpGnB .header_admin .input_box3 input::-webkit-input-placeholder {
+  color: #b2b2b2 !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+}
+
+#corpGnB .header_admin .input_box3.wd1 input {
+  width: 200px;
+}
+
+#corpGnB .header_admin .needmsg {
+  display: block;
+  margin-top: 5px;
+}
+
+#corpGnB .header_admin .input_date input {
+  width: 100%;
+  height: 40px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  background-color: #fff;
+}
+
+#corpGnB .header_admin .select_com1 {
+  height: 40px;
+}
+
+#corpGnB .header_admin .cal-wrap {
+  top: 39px;
+}
+
+#corpGnB .topfixmenu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0;
+}
+
+#corpGnB .topfixmenu .depth1,
+#corpGnB .topfixmenu .depth2,
+#corpGnB .topfixmenu .depth3 {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+}
+
+#corpGnB .topfixmenu .depth1 .now,
+#corpGnB .topfixmenu .depth2 .now,
+#corpGnB .topfixmenu .depth3 .now {
+  cursor: pointer;
+  color: #1a1a1a;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  height: 50px;
+  padding: 15px 40px 0 25px;
+  border-left: 1px solid #c2c2c2;
+  background: url("https://imgorg.catch.co.kr/job/catchapply/select_arw02.png")
+    no-repeat right 50%;
+}
+
+#corpGnB .topfixmenu .depth1 .mlist,
+#corpGnB .topfixmenu .depth2 .mlist,
+#corpGnB .topfixmenu .depth3 .mlist {
+  display: none;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #1a1a1a;
+  padding: 10px 0;
+}
+
+#corpGnB .topfixmenu .depth1 .mlist:before,
+#corpGnB .topfixmenu .depth2 .mlist:before,
+#corpGnB .topfixmenu .depth3 .mlist:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #e55355;
+  top: -1px;
+  z-index: 1;
+}
+
+#corpGnB .topfixmenu .depth1 .mlist li,
+#corpGnB .topfixmenu .depth2 .mlist li,
+#corpGnB .topfixmenu .depth3 .mlist li {
+  padding: 15px 25px 0 25px;
+}
+
+#corpGnB .topfixmenu .depth1 .mlist li a,
+#corpGnB .topfixmenu .depth2 .mlist li a,
+#corpGnB .topfixmenu .depth3 .mlist li a {
+  display: block;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  color: #808080;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+}
+
+#corpGnB .topfixmenu .depth1 .mlist li a:hover,
+#corpGnB .topfixmenu .depth2 .mlist li a:hover,
+#corpGnB .topfixmenu .depth3 .mlist li a:hover {
+  color: #1a1a1a;
+}
+
+#corpGnB .topfixmenu .depth1 .mlist li.selected a,
+#corpGnB .topfixmenu .depth2 .mlist li.selected a,
+#corpGnB .topfixmenu .depth3 .mlist li.selected a {
+  color: #1a1a1a;
+}
+
+#corpGnB .topfixmenu .depth1 .mlist li:last-child,
+#corpGnB .topfixmenu .depth2 .mlist li:last-child,
+#corpGnB .topfixmenu .depth3 .mlist li:last-child {
+  padding-bottom: 15px;
+}
+
+#corpGnB .topfixmenu .depth1.open .now,
+#corpGnB .topfixmenu .depth2.open .now,
+#corpGnB .topfixmenu .depth3.open .now {
+  background-image: url("https://imgorg.catch.co.kr/job/catchapply/select_arw02_up.png");
+  border-left-color: #1a1a1a;
+}
+
+#corpGnB .topfixmenu .depth1.open .now:after,
+#corpGnB .topfixmenu .depth2.open .now:after,
+#corpGnB .topfixmenu .depth3.open .now:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  background: #1a1a1a;
+  right: -1px;
+  top: 0;
+  z-index: 1;
+}
+
+#corpGnB .topfixmenu .depth1.open .mlist,
+#corpGnB .topfixmenu .depth2.open .mlist,
+#corpGnB .topfixmenu .depth3.open .mlist {
+  display: block;
+}
+
+#corpGnB .topfixmenu .depth1 {
+  width: 195px;
+}
+
+#corpGnB .topfixmenu .depth1 .mlist {
+  width: 196px;
+}
+
+#corpGnB .topfixmenu .depth2 {
+  width: 175px;
+}
+
+#corpGnB .topfixmenu .depth2 .mlist {
+  width: 176px;
+}
+
+#corpGnB .topfixmenu .depth3 {
+  width: 135px;
+}
+
+#corpGnB .topfixmenu .depth3 .now {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  background: none;
+}
+
+#corpGnB .topfixmenu .allmenu {
+  display: inline-block;
+  vertical-align: top;
+  width: 49px;
+  height: 50px;
+  border-left: 1px solid #c2c2c2;
+}
+
+#corpGnB .topfixmenu .allmenu a {
+  display: block;
+  font-size: 0;
+  background: url("https://imgorg.catch.co.kr/job/catchapply/ico_menu.png")
+    no-repeat 50% 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: 16px;
+  margin-left: 15px;
+}
+
+#corpGnB.gnbTopFix {
+  position: fixed;
+  background: #fff;
+  border-bottom: 2px solid #1a1a1a;
+  height: 52px;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+}
+
+#corpGnB.gnbTopFix .inner {
+  position: relative;
+  border-left: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+  height: 50px;
+}
+
+#corpGnB.gnbTopFix .logo .pic {
+  display: none;
+}
+
+#corpGnB.gnbTopFix .logo .txt {
+  padding-left: 25px;
+}
+
+#corpGnB.gnbTopFix .logo .txt.before_login {
+  display: none;
+}
+
+#corpGnB.gnbTopFix .logo .login_msg {
+  display: table-cell;
+}
+
+#corpGnB.gnbTopFix .menu {
+  display: none;
+}
+
+#corpGnB.gnbTopFix .topfixmenu {
+  display: block;
+}
+
+#corpGnB.gnbTopFix .header_admin {
+  padding: 10px 0 0 20px;
+}
+
+.mw1180 {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1280px) {
+  .mw1180 {
+    max-width: 875px;
+  }
+}
+
+.service_gnb {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 3;
+}
+
+.service_gnb .wrap {
+  zoom: 1;
+}
+
+.service_gnb .wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.service_gnb .fixed {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 300%;
+  left: -1000px;
+  height: 78px;
+  background: #fff;
+}
+
+.service_gnb .logo {
+  float: left;
+  margin-top: 5px;
+}
+
+.service_gnb .logo a {
+  display: block;
+  width: 130px;
+  height: 28px;
+  font-size: 0;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-image: url("https://imgorg.catch.co.kr/job/m_catchapply/svg/logo.svg");
+}
+
+.service_gnb .right {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.service_gnb .injae {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.service_gnb .injae a {
+  display: block;
+  padding: 0px 18px;
+  height: 38px;
+  border-radius: 8px;
+  -webkit-box-shadow: 4px 7px 12px 0 rgba(191, 60, 61, 0.69);
+  box-shadow: 4px 7px 12px 0 rgba(191, 60, 61, 0.69);
+  background-color: #e93e3a;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: -0.51px;
+  color: #fff;
+}
+
+.service_gnb .member {
+  display: inline-block;
+  height: 38px;
+  padding: 0px 18px;
+  border-radius: 8px;
+  -webkit-box-shadow: 4px 7px 12px 0 rgba(197, 71, 72, 0.64);
+  box-shadow: 4px 7px 12px 0 rgba(197, 71, 72, 0.64);
+  background-color: rgba(233, 62, 58, 0);
+}
+
+.service_gnb .member > li {
+  position: relative;
+  display: inline-block;
+}
+
+.service_gnb .member > li::after {
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 9px;
+  margin: 0px 18px 0px;
+  border-radius: 0.5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  vertical-align: middle;
+}
+
+.service_gnb .member > li:last-child::after {
+  display: none;
+}
+
+.service_gnb .member > li > a {
+  display: inline-block;
+  min-width: 51px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: -0.51px;
+  color: #fff;
+  text-align: center;
+}
+
+.service_gnb .member_menu {
+  position: absolute;
+  top: 0;
+  left: -18px;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 8px;
+  -webkit-box-shadow: 4px 7px 12px 0 rgba(191, 60, 61, 0.69);
+  box-shadow: 4px 7px 12px 0 rgba(191, 60, 61, 0.69);
+  border: solid 1px #d95151;
+  background-color: #f56966;
+  text-align: center;
+}
+
+.service_gnb .member_menu .user {
+  margin-bottom: 24px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: -0.51px;
+  color: #fff;
+}
+
+.service_gnb .member_menu li > a {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.51px;
+  text-align: center;
+  color: #ffcccb;
+}
+
+.service_gnb .member_menu li > a:hover {
+  color: #fff;
+}
+
+.service_gnb.white .logo a {
+  background-image: url("https://imgorg.catch.co.kr/job/m_catchapply/svg/logo2.svg");
+}
+
+.service_gnb.white .injae a {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.service_gnb.white .member {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #f0f2f5;
+}
+
+.service_gnb.white .member > li::after {
+  background-color: rgba(26, 26, 26, 0.3);
+}
+
+.service_gnb.white .member > li > a {
+  color: #595959;
+}
+
+.service_gnb.white .member_menu {
+  -webkit-box-shadow: 4px 2px 16px 0 rgba(95, 95, 95, 0.14);
+  box-shadow: 4px 2px 16px 0 rgba(95, 95, 95, 0.14);
+  border: solid 1px #f0f2f5;
+  background-color: #fff;
+}
+
+.service_gnb.white .member_menu .user {
+  color: #595959;
+}
+
+.service_gnb.white .member_menu li > a {
+  color: #898989;
+}
+
+.service_gnb.white .member_menu li > a:hover {
+  color: #1a1a1a;
+}
+
+.service_gnb.fix {
+  position: relative;
+}
+
+.module_wrap {
+  position: relative;
+  text-align: center;
+  min-width: 1180px;
+}
+
+.module_wrap .inner {
+  margin: 0 auto;
+  max-width: 1180px;
+  text-align: left;
+}
+
+#allMView {
+  position: fixed;
+  display: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 21;
+}
+
+#allMView .inner {
+  position: relative;
+  height: 100%;
+}
+
+#allMView .close {
+  position: absolute;
+  display: block;
+  top: 43px;
+  right: 0;
+  font-size: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("https://imgorg.catch.co.kr/job/catchapply/ico_close.png")
+    no-repeat;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#allMView .header {
+  position: relative;
+  height: 86px;
+}
+
+#allMView .header .logo {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 30px;
+}
+
+#allMView .header .logo .pic {
+  position: relative;
+  display: table-cell;
+  background: #fff;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  cursor: pointer;
+  background-image: url("https://imgorg.catch.co.kr/job/catchapply/logo_base_sq.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 45px auto;
+}
+
+#allMView .header .logo .pic img {
+  width: 100%;
+  height: 100%;
+}
+
+#allMView .header .logo .txt {
+  display: table-cell;
+  padding-left: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+#allMView .header .user {
+  position: absolute;
+  right: 37px;
+  top: 40px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  color: #1a1a1a;
+}
+
+#allMView .header .user > span {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 6px;
+}
+
+#allMView .header .user .bt_login {
+  display: inline-block;
+  vertical-align: middle;
+  border: solid 1px transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  line-height: normal;
+  vertical-align: baseline;
+  height: 24px;
+  line-height: 22px;
+  border-color: #808080;
+  font-size: 12px;
+  color: #e55355;
+  padding: 0 20px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+#allMView .header .user .bt_login:hover {
+  text-decoration: none;
+}
+
+#allMView .header .user .bt_login span {
+  display: inline-block;
+  margin-top: -3px;
+}
+
+#allMView .cont {
+  padding-top: 110px;
+}
+
+#allMView .cont .menu_group {
+  font-size: 0;
+  margin-top: 70px;
+}
+
+#allMView .cont .menu_group:first-child {
+  margin-top: 0;
+}
+
+#allMView .cont .menu {
+  display: inline-block;
+  width: 170px;
+  vertical-align: top;
+  margin-right: 90px;
+}
+
+#allMView .cont .menu h3 {
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 15px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+#allMView .cont .menu ul {
+  margin-top: 40px;
+}
+
+#allMView .cont .menu ul li {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -1px;
+  color: #808080;
+  margin-bottom: 16px;
+}
+
+#allMView .cont .menu ul li a {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+#allMView .cont .menu ul li.selected {
+  color: #1a1a1a;
+}
+
+#allMView .cont .side {
+  position: absolute;
+  right: 0;
+  top: 190px;
+}
+
+#allMView .cont .side ul li {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  color: #808080;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+#allMView .cont .side ul li a {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+#allMView .btm {
+  position: absolute;
+  bottom: 0;
+  background: #e55355;
+  width: 100%;
+  height: 60px;
+}
+
+#allMView .btm .pubreg {
+  display: inline-block;
+  margin-top: 15px;
+  color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -1px;
+  background: url("https://imgorg.catch.co.kr/job/catchapply/bt_pubreg.png")
+    no-repeat left 50%;
+  padding: 0 41px;
+}
+
+/* Footer */
+.footer_area {
+  padding: 80px 0;
+  background-color: #fbfbfc;
+  text-align: left;
+}
+
+.footer_area .mw1180 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer_area .left,
+.footer_area .right {
+  display: inline-block;
+}
+
+.footer_area .jinhak {
+  margin-bottom: 12px;
+  font-size: 29px;
+  font-weight: normal;
+  letter-spacing: -0.8px;
+  color: #1a1a1a;
+}
+
+.footer_area .jinhak_txt {
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: -0.69px;
+  color: #1a1a1a;
+}
+
+.footer_area .jinhak_cs {
+  display: table;
+  margin-top: 44px;
+  border-radius: 4px;
+  border: solid 1px #dcdcdd;
+}
+
+.footer_area .jinhak_cs dt {
+  display: table-cell;
+  padding: 16px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: -0.51px;
+  text-align: center;
+  color: #1a1a1a;
+  border-right: solid 1px #dcdcdd;
+}
+
+.footer_area .jinhak_cs dd {
+  display: table-cell;
+  padding: 14px 20px;
+}
+
+.footer_area .jinhak_cs dd span {
+  display: block;
+  font-size: 12px;
+  line-height: 1.75;
+  letter-spacing: -0.51px;
+  color: #1a1a1a;
+}
+
+.footer_area .jinhak_cs dd span.point {
+  color: #f56965;
+}
+
+.footer_area .btn_com4 {
+  margin: 0;
+  height: 38px;
+  min-width: 163px;
+}
+
+.footer_area .footer_link {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer_area .footer_link a {
+  display: block;
+  font-size: 12px;
+  line-height: 2.17;
+  letter-spacing: -0.51px;
+  color: #1a1a1a;
+}
+
+.footer_area .footer_info {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 70px;
+}
+
+.footer_area .footer_info span {
+  display: block;
+  font-size: 12px;
+  line-height: 2.17;
+  letter-spacing: -0.51px;
+  color: #565656;
+}
+
+.footer_area .btn_top {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  margin-left: 600px;
+  width: 40px;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.footer_area.white {
+  background: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer_area .left {
+    margin-right: 128px;
+  }
+}
+
+.footer_area1 {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-top: 95px;
+  padding-bottom: 60px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  color: #808080;
+  font-weight: 300;
+  text-align: left;
+}
+
+.footer_area1 .top {
+  position: relative;
+}
+
+.footer_area1 .top .jinhak {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  letter-spacing: -0.034em;
+  font-weight: 400;
+  color: #595959;
+}
+
+.footer_area1 .footer_link {
+  margin-bottom: 12px;
+  letter-spacing: 0;
+}
+
+.footer_area1 .footer_link a {
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  letter-spacing: -0.034em;
+  color: #272727;
+}
+
+.footer_area1 .footer_link a.privacy {
+  font-weight: 700;
+}
+
+.footer_area1 .footer_link a::after {
+  position: absolute;
+  top: 6px;
+  right: -20px;
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 11px;
+  background: #878787;
+}
+
+.footer_area1 .footer_link a:first-child {
+  margin-left: 0;
+}
+
+.footer_area1 .footer_link a:last-child {
+  margin-right: 0;
+}
+
+.footer_area1 .footer_link a:last-child::after {
+  display: none;
+}
+
+.footer_area1 .footer_info {
+  margin-bottom: 27px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  color: #595959;
+  font-weight: 300;
+}
+
+.footer_area1 .footer_info span {
+  margin-right: 14px;
+  color: inherit;
+  letter-spacing: -0.034em;
+}
+
+.footer_area1 .footer_email {
+  margin-bottom: 50px;
+}
+
+.footer_area1 .footer_email .tit {
+  margin-bottom: 10px;
+  color: #272727;
+}
+
+.footer_area1 .btn_top {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  margin-left: 600px;
+  width: 40px;
+  cursor: pointer;
+  font-size: 0;
+}
+
+@media screen and (max-width: 1042px) {
+  .footer_area1 {
+    min-width: 1024px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .footer_area1 {
+    min-width: 980px;
+  }
+}
+
+.crop_footer {
+  background: #fafafa;
+}
+
+.htmlNoScroll {
+  overflow: hidden;
+  height: auto;
+}
+
+/* 개인정보 처리방침, 이용약관 */
+.policy .inner,
+.keepv1ver .inner {
+  margin: 0 auto;
+  width: 1180px;
+  text-align: left;
+}
+
+.policy .policy_top,
+.keepv1ver .policy_top {
+  padding: 30px 0 20px 0;
+}
+
+.policy .policy_top h1,
+.keepv1ver .policy_top h1 {
+  height: 46px;
+  text-align: center;
+  font-size: 0;
+}
+
+.policy .policy_top h1 a,
+.keepv1ver .policy_top h1 a {
+  font-size: 0;
+  height: 46px;
+}
+
+.policy .policy_top h1 a img,
+.keepv1ver .policy_top h1 a img {
+  height: 100%;
+}
+
+.policy select,
+.keepv1ver select {
+  border: 1px solid #c2c2c2;
+  width: 150px;
+  height: 30px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  padding: 1px 25px 1px 10px;
+  background: url("https://imgorg.catch.co.kr/job/catchapply/select_arw02.png")
+    no-repeat 113% 50%;
+}
+
+.policy .contents,
+.keepv1ver .contents {
+  margin: 0 auto;
+  max-width: 1030px;
+  padding: 40px 40px 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid 1px #000;
+}
+
+.policy .contents h2,
+.keepv1ver .contents h2 {
+  position: relative;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -1.2px;
+  margin-bottom: 20px;
+}
+
+.policy .contents h2 .right_txt,
+.keepv1ver .contents h2 .right_txt {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.policy .contents h2 + section,
+.keepv1ver .contents h2 + section {
+  margin-top: -20px;
+}
+
+.policy .contents h3,
+.keepv1ver .contents h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -1px;
+  margin: 40px 0 10px 0;
+}
+
+.policy .contents h4,
+.keepv1ver .contents h4 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -1px;
+  margin: 20px 0 0 0;
+}
+
+.policy .contents article p,
+.keepv1ver .contents article p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+  word-break: keep-all;
+}
+
+.policy .contents article p + p,
+.keepv1ver .contents article p + p {
+  margin-top: 15px;
+}
+
+.policy .contents article a,
+.keepv1ver .contents article a {
+  vertical-align: baseline;
+  text-decoration: underline;
+}
+
+.policy .contents table,
+.keepv1ver .contents table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+  border: solid 1px #d6d6d6;
+  margin: 5px 0;
+  table-layout: fixed;
+}
+
+.policy .contents table th,
+.keepv1ver .contents table th,
+.policy .contents table td,
+.keepv1ver .contents table td {
+  border: solid 1px #d6d6d6;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  color: #1a1a1a;
+  padding: 7px 10px 9px;
+}
+
+.policy .contents table tbody th,
+.keepv1ver .contents table tbody th {
+  font-weight: 400;
+  word-break: keep-all;
+}
+
+.policy .contents table tbody td,
+.keepv1ver .contents table tbody td {
+  word-break: keep-all;
+}
+
+.policy .contents table tbody td a.ellipsis,
+.keepv1ver .contents table tbody td a.ellipsis {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.policy .contents ol,
+.keepv1ver .contents ol {
+  margin: 10px 0 0 0;
+}
+
+.policy .contents ol > li,
+.keepv1ver .contents ol > li {
+  position: relative;
+  padding-left: 22px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+  word-break: keep-all;
+  margin-top: 15px;
+}
+
+.policy .contents ol > li:first-child,
+.keepv1ver .contents ol > li:first-child {
+  margin-top: 0;
+}
+
+.policy .contents ol > li:before,
+.keepv1ver .contents ol > li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+}
+
+.policy .contents ol > li:nth-child(1):before,
+.keepv1ver .contents ol > li:nth-child(1):before {
+  content: "1)";
+}
+
+.policy .contents ol > li:nth-child(2):before,
+.keepv1ver .contents ol > li:nth-child(2):before {
+  content: "2)";
+}
+
+.policy .contents ol > li:nth-child(3):before,
+.keepv1ver .contents ol > li:nth-child(3):before {
+  content: "3)";
+}
+
+.policy .contents ol > li:nth-child(4):before,
+.keepv1ver .contents ol > li:nth-child(4):before {
+  content: "4)";
+}
+
+.policy .contents ol > li:nth-child(5):before,
+.keepv1ver .contents ol > li:nth-child(5):before {
+  content: "5)";
+}
+
+.policy .contents ol > li:nth-child(6):before,
+.keepv1ver .contents ol > li:nth-child(6):before {
+  content: "6)";
+}
+
+.policy .contents ol > li:nth-child(7):before,
+.keepv1ver .contents ol > li:nth-child(7):before {
+  content: "7)";
+}
+
+.policy .contents ol > li:nth-child(8):before,
+.keepv1ver .contents ol > li:nth-child(8):before {
+  content: "8)";
+}
+
+.policy .contents ol > li:nth-child(9):before,
+.keepv1ver .contents ol > li:nth-child(9):before {
+  content: "9)";
+}
+
+.policy .contents ol > li:nth-child(10):before,
+.keepv1ver .contents ol > li:nth-child(10):before {
+  content: "10)";
+}
+
+.policy .contents ol > li:nth-child(11):before,
+.keepv1ver .contents ol > li:nth-child(11):before {
+  content: "11)";
+}
+
+.policy .contents ol > li:nth-child(12):before,
+.keepv1ver .contents ol > li:nth-child(12):before {
+  content: "12)";
+}
+
+.policy .contents ol > li:nth-child(13):before,
+.keepv1ver .contents ol > li:nth-child(13):before {
+  content: "13)";
+}
+
+.policy .contents ol > li:nth-child(14):before,
+.keepv1ver .contents ol > li:nth-child(14):before {
+  content: "14)";
+}
+
+.policy .contents ol > li:nth-child(15):before,
+.keepv1ver .contents ol > li:nth-child(15):before {
+  content: "15)";
+}
+
+.policy .contents ol > li:nth-child(16):before,
+.keepv1ver .contents ol > li:nth-child(16):before {
+  content: "16)";
+}
+
+.policy .contents ol > li:nth-child(17):before,
+.keepv1ver .contents ol > li:nth-child(17):before {
+  content: "17)";
+}
+
+.policy .contents ol > li:nth-child(18):before,
+.keepv1ver .contents ol > li:nth-child(18):before {
+  content: "18)";
+}
+
+.policy .contents ol > li:nth-child(19):before,
+.keepv1ver .contents ol > li:nth-child(19):before {
+  content: "19)";
+}
+
+.policy .contents ol > li:nth-child(20):before,
+.keepv1ver .contents ol > li:nth-child(20):before {
+  content: "20)";
+}
+
+.policy .contents ol > li > ol,
+.keepv1ver .contents ol > li > ol {
+  margin: 10px 0 0 0;
+}
+
+.policy .contents ol > li > ol > li,
+.keepv1ver .contents ol > li > ol > li {
+  word-break: keep-all;
+  margin-top: 5px;
+}
+
+.policy .contents ol > li > ol > li:first-child,
+.keepv1ver .contents ol > li > ol > li:first-child {
+  margin-top: 0;
+}
+
+.policy .contents ol > li > ol > li:nth-child(1):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(1):before {
+  content: "①";
+}
+
+.policy .contents ol > li > ol > li:nth-child(2):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(2):before {
+  content: "②";
+}
+
+.policy .contents ol > li > ol > li:nth-child(3):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(3):before {
+  content: "③";
+}
+
+.policy .contents ol > li > ol > li:nth-child(4):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(4):before {
+  content: "④";
+}
+
+.policy .contents ol > li > ol > li:nth-child(5):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(5):before {
+  content: "⑤";
+}
+
+.policy .contents ol > li > ol > li:nth-child(6):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(6):before {
+  content: "⑥";
+}
+
+.policy .contents ol > li > ol > li:nth-child(7):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(7):before {
+  content: "⑦";
+}
+
+.policy .contents ol > li > ol > li:nth-child(8):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(8):before {
+  content: "⑧";
+}
+
+.policy .contents ol > li > ol > li:nth-child(9):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(9):before {
+  content: "⑨";
+}
+
+.policy .contents ol > li > ol > li:nth-child(10):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(10):before {
+  content: "⑩";
+}
+
+.policy .contents ol > li > ol > li:nth-child(11):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(11):before {
+  content: "⑪";
+}
+
+.policy .contents ol > li > ol > li:nth-child(12):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(12):before {
+  content: "⑫";
+}
+
+.policy .contents ol > li > ol > li:nth-child(13):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(13):before {
+  content: "⑬";
+}
+
+.policy .contents ol > li > ol > li:nth-child(14):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(14):before {
+  content: "⑭";
+}
+
+.policy .contents ol > li > ol > li:nth-child(15):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(15):before {
+  content: "⑮";
+}
+
+.policy .contents ol > li > ol > li:nth-child(16):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(16):before {
+  content: "⑯";
+}
+
+.policy .contents ol > li > ol > li:nth-child(17):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(17):before {
+  content: "⑰";
+}
+
+.policy .contents ol > li > ol > li:nth-child(18):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(18):before {
+  content: "⑱";
+}
+
+.policy .contents ol > li > ol > li:nth-child(19):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(19):before {
+  content: "⑲";
+}
+
+.policy .contents ol > li > ol > li:nth-child(20):before,
+.keepv1ver .contents ol > li > ol > li:nth-child(20):before {
+  content: "⑳";
+}
+
+.policy .contents ol.type1 > li,
+.keepv1ver .contents ol.type1 > li {
+  padding-left: 18px;
+}
+
+.policy .contents ol.type1 > li:nth-child(1):before,
+.keepv1ver .contents ol.type1 > li:nth-child(1):before {
+  content: "1.";
+}
+
+.policy .contents ol.type1 > li:nth-child(2):before,
+.keepv1ver .contents ol.type1 > li:nth-child(2):before {
+  content: "2.";
+}
+
+.policy .contents ol.type1 > li:nth-child(3):before,
+.keepv1ver .contents ol.type1 > li:nth-child(3):before {
+  content: "3.";
+}
+
+.policy .contents ol.type1 > li:nth-child(4):before,
+.keepv1ver .contents ol.type1 > li:nth-child(4):before {
+  content: "4.";
+}
+
+.policy .contents ol.type1 > li:nth-child(5):before,
+.keepv1ver .contents ol.type1 > li:nth-child(5):before {
+  content: "5.";
+}
+
+.policy .contents ol.type1 > li:nth-child(6):before,
+.keepv1ver .contents ol.type1 > li:nth-child(6):before {
+  content: "6.";
+}
+
+.policy .contents ol.type1 > li:nth-child(7):before,
+.keepv1ver .contents ol.type1 > li:nth-child(7):before {
+  content: "7.";
+}
+
+.policy .contents ol.type1 > li:nth-child(8):before,
+.keepv1ver .contents ol.type1 > li:nth-child(8):before {
+  content: "8.";
+}
+
+.policy .contents ol.type1 > li:nth-child(9):before,
+.keepv1ver .contents ol.type1 > li:nth-child(9):before {
+  content: "9.";
+}
+
+.policy .contents ol.type1 > li:nth-child(10):before,
+.keepv1ver .contents ol.type1 > li:nth-child(10):before {
+  content: "10.";
+}
+
+.policy .contents ol.type1 > li:nth-child(11):before,
+.keepv1ver .contents ol.type1 > li:nth-child(11):before {
+  content: "11.";
+}
+
+.policy .contents ol.type1 > li:nth-child(12):before,
+.keepv1ver .contents ol.type1 > li:nth-child(12):before {
+  content: "12.";
+}
+
+.policy .contents ol.type1 > li:nth-child(13):before,
+.keepv1ver .contents ol.type1 > li:nth-child(13):before {
+  content: "13.";
+}
+
+.policy .contents ol.type1 > li:nth-child(14):before,
+.keepv1ver .contents ol.type1 > li:nth-child(14):before {
+  content: "14.";
+}
+
+.policy .contents ol.type1 > li:nth-child(15):before,
+.keepv1ver .contents ol.type1 > li:nth-child(15):before {
+  content: "15.";
+}
+
+.policy .contents ol.type1 > li:nth-child(16):before,
+.keepv1ver .contents ol.type1 > li:nth-child(16):before {
+  content: "16.";
+}
+
+.policy .contents ol.type1 > li:nth-child(17):before,
+.keepv1ver .contents ol.type1 > li:nth-child(17):before {
+  content: "17.";
+}
+
+.policy .contents ol.type1 > li:nth-child(18):before,
+.keepv1ver .contents ol.type1 > li:nth-child(18):before {
+  content: "18.";
+}
+
+.policy .contents ol.type1 > li:nth-child(19):before,
+.keepv1ver .contents ol.type1 > li:nth-child(19):before {
+  content: "19.";
+}
+
+.policy .contents ol.type1 > li:nth-child(20):before,
+.keepv1ver .contents ol.type1 > li:nth-child(20):before {
+  content: "20.";
+}
+
+.policy .contents ul,
+.keepv1ver .contents ul {
+  margin: 10px 0 15px 0;
+}
+
+.policy .contents ul > li,
+.keepv1ver .contents ul > li {
+  position: relative;
+  padding-left: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+  word-break: keep-all;
+}
+
+.policy .contents ul > li:before,
+.keepv1ver .contents ul > li:before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+}
+
+.policy .contents ul:last-child,
+.keepv1ver .contents ul:last-child {
+  margin-bottom: 0;
+}
+
+.policy .point01,
+.keepv1ver .point01 {
+  color: #e55355;
+}
+
+.quotation {
+  min-width: 810px;
+  padding: 20px 30px 40px;
+}
+
+.quotation header {
+  margin-bottom: 30px;
+}
+
+.quotation header h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 32px;
+  line-height: 50px;
+  letter-spacing: -1.2px;
+}
+
+.quotation .quo_info {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-bottom: 30px;
+}
+
+.quotation .quo_info dl {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.quotation .quo_info dl dt {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  color: #999;
+}
+
+.quotation .quo_info dl dd {
+  position: relative;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  color: #1a1a1a;
+  margin-bottom: 3px;
+}
+
+.quotation .quo_info dl dd .stamp {
+  position: absolute;
+  top: -13px;
+  width: 47px;
+}
+
+.quotation .quo_info dl dd.alphanum {
+  letter-spacing: 0;
+}
+
+.quotation .quo_info dl.corp1 {
+  width: 20%;
+}
+
+.quotation .quo_info dl.corp2 {
+  width: 50%;
+}
+
+.quotation .quo_info dl.corp3 {
+  width: 30%;
+}
+
+.quotation .quo_total {
+  margin: 30px 0;
+  background: #f5f5f5;
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.quotation .quo_total p {
+  display: table-cell;
+  padding: 25px 30px;
+  width: 50%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+}
+
+.quotation .quo_total p:last-child {
+  text-align: right;
+}
+
+.quotation .quo_total p .alphanum {
+  color: #e55355;
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
+.quotation .quo_detail table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.quotation .quo_detail table tr th {
+  border-bottom: 2px solid #1a1a1a;
+  padding: 0 1px 7px 2px;
+}
+
+.quotation .quo_detail table tr td {
+  border-bottom: 1px solid #f5f5f5;
+  padding: 7px 2px 6px;
+}
+
+.quotation .quo_detail table tr td.alphanum {
+  letter-spacing: 0;
+}
+
+.quotation .quo_detail table tr th,
+.quotation .quo_detail table tr td {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  text-align: right;
+}
+
+.quotation .quo_detail table tr th:first-child,
+.quotation .quo_detail table tr td:first-child {
+  text-align: left;
+}
+
+.quotation .quo_detail table tr:last-child td {
+  border-bottom-color: #1a1a1a;
+}
+
+.quotation .quo_detail dl {
+  padding: 10px 0 20px 0;
+  zoom: 1;
+  position: relative;
+}
+
+.quotation .quo_detail dl:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.quotation .quo_detail dl dt,
+.quotation .quo_detail dl dd {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -1px;
+}
+
+.quotation .quo_detail dl dt {
+  right: 180px;
+  width: 180px;
+  position: absolute;
+}
+
+.quotation .quo_detail dl dd {
+  text-align: right;
+}
+
+.quotation .explain2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  text-align: right;
+}
+
+.quotation .explain2 strong {
+  vertical-align: baseline;
+}
+
+.quotation .btn_center {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.keepv1ver .contents.member {
+  width: 480px;
+  padding-bottom: 60px;
+}
+
+.keepv1ver .contents .heading1 h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.keepv1ver .contents .blind {
+  display: none;
+}
+
+.keepv1ver .contents .form {
+  margin-top: 50px;
+}
+
+.keepv1ver .contents .cell_box .cell_txt1 {
+  border-bottom: 2px solid #1a1a1a;
+  margin-top: 40px;
+}
+
+.keepv1ver .contents .cell_box .cell_txt1 input {
+  width: 100%;
+  height: 39px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+.keepv1ver .contents .cell_box .cell_txt1 input.placeholder {
+  color: #c2c2c2 !important;
+  font-weight: normal !important;
+  font-size: 20px !important;
+}
+
+.keepv1ver .contents .cell_box .cell_txt1 input:-moz-placeholder {
+  color: #c2c2c2 !important;
+  font-weight: normal !important;
+  font-size: 20px !important;
+}
+
+.keepv1ver .contents .cell_box .cell_txt1 input::-moz-placeholder {
+  color: #c2c2c2 !important;
+  font-weight: normal !important;
+  font-size: 20px !important;
+}
+
+.keepv1ver .contents .cell_box .cell_txt1 input:-ms-input-placeholder {
+  color: #c2c2c2 !important;
+  font-weight: normal !important;
+  font-size: 20px !important;
+}
+
+.keepv1ver .contents .cell_box .cell_txt1 input::-webkit-input-placeholder {
+  color: #c2c2c2 !important;
+  font-weight: normal !important;
+  font-size: 20px !important;
+}
+
+.keepv1ver .contents .cell_box.wrong .cell_txt1 {
+  border-bottom-color: #e55355;
+}
+
+.keepv1ver .contents .cell_box.wrong .cell_txt1 input {
+  color: #e55355;
+}
+
+.keepv1ver .contents .cell_box.wrong .message {
+  color: #e55355;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  padding: 5px 0 0 2px;
+}
+
+.keepv1ver .contents .btns {
+  margin-top: 40px;
+}
+
+.keepv1ver .contents .btns .btn1 {
+  display: inline-block;
+  vertical-align: middle;
+  border: solid 1px transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  line-height: normal;
+  width: 100%;
+  height: 50px;
+  line-height: 48px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.keepv1ver .contents .btns .btn1:hover {
+  text-decoration: none;
+}
+
+.keepv1ver .contents .btns .btn1 span {
+  display: inline-block;
+  margin-top: -6px;
+}
+
+.keepv1ver .contents .btns .btn1.st1 {
+  background-color: #e55355;
+  border-color: #e55355;
+}
+
+.keepv1ver .contents .btns .btn1.st2 {
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+}
+
+.keepv1ver .contents .btns .btn1.st3 {
+  background-color: #c2c2c2;
+  border-color: #c2c2c2;
+}
+
+.keepv1ver .contents .btns.col2 {
+  font-size: 0;
+}
+
+.keepv1ver .contents .btns.col2 .btn1 {
+  display: inline-block;
+  width: 50%;
+}
+
+.keepv1ver .contents .notice1 {
+  margin-top: 20px;
+}
+
+.keepv1ver .contents .notice1 p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 17px;
+  color: #1a1a1a;
+}
+
+.keepv1ver .contents .notice1 p strong {
+  vertical-align: baseline;
+}
+
+.keepv1ver .contents .notice1.type2 {
+  text-align: right;
+}
+
+.keepv1ver .contents .notice1.type2 a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 17px;
+  color: #999;
+  letter-spacing: -1px;
+}
+
+.keepv1ver .contents .notice1.type2 a.link {
+  text-decoration: underline;
+}
+
+.keepv1ver .contents .complete_msg .headline1 {
+  margin-top: 15px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+}
+
+.keepv1ver .contents .explain2 {
+  margin-top: 30px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 17px;
+  color: #1a1a1a;
+  line-height: 28px;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+
+.keepv1ver .contents .explain2 strong {
+  vertical-align: baseline;
+}
+
+.keepv1ver .contents .result {
+  padding: 30px 3px 20px;
+}
+
+.keepv1ver .contents .result .headline1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 32px;
+  line-height: 50px;
+  letter-spacing: -1.2px;
+  color: #1a1a1a;
+}
+
+.keepv1ver .contents .result p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 17px;
+  color: #595959;
+}
+
+.error_sec {
+  min-height: 100vh;
+}
+
+.error_sec .section {
+  padding-top: 94px;
+  text-align: center;
+}
+
+.error_sec .section > * {
+  font-family: "Malgun Gothic" !important;
+}
+
+.error_sec .section h1 {
+  margin-bottom: 40px;
+}
+
+.error_sec .section h1 .logo {
+  display: block;
+  margin: 0 auto;
+  width: 208px;
+  height: 45px;
+  background: url("https://imgorg.catch.co.kr/job/m_catchapply/logo.png") center
+    no-repeat;
+  font-size: 0;
+  background-size: 208px 45px;
+}
+
+.error_sec .section .tit {
+  margin-bottom: 20px;
+  font-size: 43px;
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  color: #282828;
+}
+
+.error_sec .section .txt {
+  font-size: 16px;
+  line-height: 25px;
+  color: #888;
+}
+
+.error_sec .section .txt strong {
+  color: #f66f6f;
+  font-weight: 400;
+  vertical-align: initial;
+}
+
+.error_sec .section .info {
+  margin: 16px 0;
+  font-size: 12px;
+  letter-spacing: -0.082em;
+  color: #999;
+}
+
+.error_sec .section .info strong {
+  color: #282828;
+  font-weight: 400;
+  vertical-align: initial;
+}
+
+.error_sec .section .info a {
+  color: #999;
+  vertical-align: initial;
+}
+
+.error_sec .section .btn_box {
+  margin-top: 48px;
+}
+
+.error_sec .section .btn_box a {
+  font-family: "Malgun Gothic" !important;
+}
+
+.rbn_fix {
+  position: fixed;
+  top: 145px;
+  left: 50%;
+  z-index: 2;
+  margin-left: 620px;
+}
+
+.rbn_fix_slider {
+  position: fixed;
+  top: 145px;
+  left: 50%;
+  z-index: 2;
+  margin-left: 620px;
+  width: 130px;
+  height: 195px;
+}
+
+.rbn_fix_slider .rbn_slide {
+  height: 195px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.rbn_fix_slider .paging_wrap {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.rbn_fix_slider .paging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative !important;
+  width: auto !important;
+  bottom: auto;
+  font-size: 12px;
+  line-height: 16px;
+  color: #9e9fb8;
+}
+
+.rbn_fix_slider .paging_arr {
+  width: 12px;
+  height: 12px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cpolygon fill='%239e9fb8' points='14 17.77 22.77 9 26 9 14 21 2 9 5.23 9 14 17.77'/%3E%3C/svg%3E")
+    no-repeat center center;
+  background-size: 12px auto;
+  z-index: 10;
+}
+
+.rbn_fix_slider .paging_arr.prev1 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.rbn_fix_slider .paging_arr.next1 {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.rbn_slide {
+  padding-top: 87px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.rbn_slide.slide1 {
+  background-image: url(https://imgorg.catch.co.kr/job/catchapply/rbn_bn1.png);
+}
+
+.rbn_slide.slide2 {
+  background-image: url(https://imgorg.catch.co.kr/job/catchapply/rbn_bn2.png);
+}
+
+.rbn_slide.slide3 {
+  background-image: url(https://imgorg.catch.co.kr/job/catchapply/rbn_bn3.png);
+}
+
+.rbn_slide.slide4 {
+  background-image: url(https://imgorg.catch.co.kr/job/catchapply/rbn_bn4.png);
+}
+
+.rbn_slide .t1 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  color: #fccd75;
+}
+
+.rbn_slide .t2 {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.bn_starting {
+  display: block;
+  width: 130px;
+  height: 195px;
+  padding-top: 105px;
+  background: url("https://imgorg.catch.co.kr/job/catchapply/event/20210609/bn_pc.png")
+    no-repeat center top;
+  -webkit-box-shadow: 11px 11px 38.8px 1.2px rgba(0, 0, 0, 0.05);
+  box-shadow: 11px 11px 38.8px 1.2px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.bn_starting .lt1 {
+  font-size: 12px;
+  color: #fccd75;
+  letter-spacing: -0.05em;
+}
+
+.bn_starting .lt2 {
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: -0.05em;
+  line-height: 20px;
+  margin-top: 7px;
+}
+
+.lbn_fix {
+  position: fixed;
+  top: 145px;
+  right: 50%;
+  z-index: 2;
+  margin-right: 620px;
+}
+
+.bn_always {
+  display: block;
+  width: 130px;
+  height: 220px;
+  -webkit-box-shadow: 11px 11px 38.8px 1.2px rgba(0, 0, 0, 0.05);
+  box-shadow: 11px 11px 38.8px 1.2px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.bn_always.bn1 {
+  background: url("https://imgorg.catch.co.kr/job/catchapply/corp_bn1.png")
+    no-repeat center top;
+}
+
+.bn_always.bn2 {
+  background: url("https://imgorg.catch.co.kr/job/catchapply/corp_bn2.png")
+    no-repeat center top;
+}
+
+.bn_always .box1 {
+  display: block;
+  padding-top: 84px;
+  padding-bottom: 20px;
+}
+
+.bn_always .lt1 {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  letter-spacing: -0.05em;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.bn_always .lt2 {
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  color: #fccd75;
+  letter-spacing: -0.05em;
+}
+
+.bn_always .lt2.arr {
+  display: inline-block;
+  vertical-align: bottom;
+  padding-right: 13px;
+  background: url("https://imgorg.catch.co.kr/job/catchapply/ico_more_y1.png")
+    no-repeat right bottom 5px;
+}
+
+.bn_always1 {
+  display: block;
+  width: 130px;
+  height: 317px;
+  background: url("https://imgorg.catch.co.kr/job/catchapply/publist_banner.png")
+    no-repeat center top;
+  -webkit-box-shadow: 11px 11px 38.8px 1.2px rgba(0, 0, 0, 0.05);
+  box-shadow: 11px 11px 38.8px 1.2px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.bn_always1 .box1 {
+  display: block;
+  padding-top: 84px;
+  padding-bottom: 23px;
+}
+
+.bn_always1 .box2 {
+  display: block;
+  padding: 25px 0;
+}
+
+.bn_always1 .lt1 {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  letter-spacing: -0.05em;
+  line-height: 22px;
+}
+
+.bn_always1 .lt2 {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1em;
+  color: #fccd75;
+  letter-spacing: -0.05em;
+}
+
+.bn_always1 .lt2.arr {
+  display: inline-block;
+  padding-right: 13px;
+  background: url("https://imgorg.catch.co.kr/job/catchapply/ico_more_y1.png")
+    no-repeat right center;
+}
