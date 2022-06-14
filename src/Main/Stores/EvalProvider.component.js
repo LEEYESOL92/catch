@@ -3,6 +3,7 @@ import EvalContext from "./EvalContext";
 
 const EvalProvider = ({ children }) => {
   const selSuhum = (SuhumNo) => {
+    console.log(SuhumNo, "???");
     setSuhumNo((prevState) => {
       return {
         ...prevState,
@@ -10,7 +11,6 @@ const EvalProvider = ({ children }) => {
       };
     });
   };
-
   const initialState = {
     suhumNo: "",
     selSuhum

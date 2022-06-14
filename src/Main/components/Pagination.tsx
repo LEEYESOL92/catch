@@ -26,13 +26,7 @@ function Pagination({
     getPageData(page);
   };
 
-  let pageCountSet = [];
-  for (let i = 1; i <= pageCount; i++) {
-    pageCountSet.push(i);
-  }
-
   let finalIndexes = [];
-  console.log(number, pageNumbers.length - 3);
   switch (number) {
     case 1: //첫번째
       finalIndexes = pageNumbers.slice(number - 1, number + 2);
@@ -46,22 +40,21 @@ function Pagination({
       break;
     default:
       if (number > pageNumbers.length - 3) {
-        console.log("duirl??");
         finalIndexes = pageNumbers.slice(number - 2, number + 1);
         finalIndexes.unshift(1);
         finalIndexes.splice(1, 0, "...");
-      } else if (number > 3 && number <= pageNumbers.length - 3) {
-        console.log("?");
-        finalIndexes = pageNumbers.slice(number - 2, number + 1);
-        finalIndexes.unshift(1);
-        finalIndexes.push(pageCount);
-        finalIndexes.splice(finalIndexes.length - 1, 0, "..");
-        finalIndexes.splice(1, 0, "..");
       } else {
-        console.log("?????????????", pageNumbers);
-        finalIndexes = pageNumbers.slice(number - 3, number + 1);
-        finalIndexes.push(pageCount);
-        finalIndexes.splice(finalIndexes.length - 1, 0, "...");
+        if (number > 3) {
+          finalIndexes = pageNumbers.slice(number - 2, number + 1);
+          finalIndexes.push(pageCount);
+          finalIndexes.splice(finalIndexes.length - 1, 0, "...");
+          finalIndexes.unshift(1);
+          finalIndexes.splice(1, 0, "..");
+        } else {
+          finalIndexes = pageNumbers.slice(number - 2, number + 1);
+          finalIndexes.push(pageCount);
+          finalIndexes.splice(finalIndexes.length - 1, 0, "...");
+        }
       }
       break;
   }
@@ -82,6 +75,7 @@ function Pagination({
           </a>
         )
       )}
+
       <a className="next" onClick={() => onClick(number + 1)}>
         다음
       </a>

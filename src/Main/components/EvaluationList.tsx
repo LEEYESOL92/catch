@@ -18,7 +18,6 @@ type SuhumListProps = {
 function EvaluationList({ suhumList }: SuhumListProps) {
   const { selSuhum } = useContext(EvalContext);
   const value = useContext(EvalContext);
-
   return (
     <ul className="appdetail_list">
       {suhumList.map((data: any) => (

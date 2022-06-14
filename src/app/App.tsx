@@ -1,7 +1,7 @@
 import React from "react";
 import EvalContainer from "../EvalContainer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import App2 from "../Test/ContextAPI/app";
+import UserApp from "../UserList/UserApp";
 //FC -> 함수형 컴포넌트
 // const App: React.FC = () => {
 //   return <EvalContainer />;
@@ -26,7 +26,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/evaluation" element={<EvalContainer />} />
-        <Route path="/test" element={<App2 />} />
+        <Route path="/UserApp" element={<UserApp />} />
       </Routes>
     </Router>
   );
