@@ -1,7 +1,6 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../../css/Common.css";
 import "../../css/Publicreg.css";
-import UserInfo from "../UserInfo";
 import {
   useUsersState,
   useUsersDispatch,
@@ -22,21 +21,25 @@ type SuhumListProps = {
 function EvaluationList({ suhumList }: SuhumListProps) {
   // const [selSuhumNo, setUserId] = useState<null | string>(null);
   const [selSuhumNo, setUserId] = useState("");
-  console.log("selSuhumNo", selSuhumNo);
 
   const state = useUsersState();
+  const { data: user } = state.user;
   const dispatch = useUsersDispatch();
   useEffect(() => {
-    getUser(dispatch, selSuhumNo);
+    if (!user) {
+      getUser(dispatch, suhumList[0].SuhumNo);
+    } else {
+      getUser(dispatch, selSuhumNo);
+    }
   }, [dispatch, selSuhumNo]);
-
+  console.log("user", user);
   return (
     <>
       <ul className="appdetail_list">
         {suhumList.map((data: any) => (
           <li
             key={data.SuhumNo}
-            // className={value.suhumNo === data.SuhumNo ? "selected" : ""}
+            // className={data.suhumNo === user.data.SuhumNo ? "selected" : ""}
           >
             <a className="core" onClick={() => setUserId(data.SuhumNo)}>
               <p className="pic"></p>

@@ -4,9 +4,7 @@ import { createContext } from "react";
 //직접 우리가
 const EvalContext = createContext({
   suhumNo: "",
-  selSuhum: (SuhumNo: any) => {
-    console.log("!!!!!!", SuhumNo);
-  }
+  selSuhum: (SuhumNo: any) => {}
 });
 
 export default EvalContext;

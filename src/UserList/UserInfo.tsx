@@ -1,14 +1,22 @@
 import React, { useContext } from "react";
 import { useUsersState } from "./ContextAPI/UserInfoContext";
-type selSuhumProps = {
-  // suhumList: Array<SuhumList>;
-  suhumNo: any;
+
+type UserInfo = {
+  SuhumNo: string;
+  ApplicantName: string;
+  GraduateSchoolName: string;
+  age: number;
+  gender: string;
+};
+type UserInfoProps = {
+  // userList: Array<UserList>;
+  userInfo: any;
 };
 
-function UserInfo() {
-  const state = useUsersState();
-  const { data: user, loading, error } = state.user;
-  console.log("useruser", user);
+function UserInfo({ userInfo }: UserInfoProps) {
+  // const state = useUsersState();
+  // const { data: user, loading, error } = state.user;
+  if (!userInfo) return <div>데이터없음</div>;
   return (
     <div className="module_info module_box">
       <p
@@ -16,10 +24,12 @@ function UserInfo() {
         // style="background-image: url('https://imgorg.catch.co.kr/job/corp/edu_pic_yyd.jpg');"
       ></p>
       <dl>
-        <dt>{user?.SuhumNo}???</dt>
+        <dt>{userInfo.data.SuhumNo}</dt>
         <dd>
-          <span>여/24</span>
-          <span>이름고등학교 졸업</span>
+          <span>
+            {userInfo.data.gender}/{userInfo.data.age}
+          </span>
+          <span>{userInfo.data.GraduateSchoolName} 졸업</span>
           <span>아프리카어과 3/4.5</span>
         </dd>
       </dl>

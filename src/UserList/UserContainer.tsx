@@ -12,6 +12,7 @@ function UserContainer() {
   const dispatch = useUsersDispatch();
   const state = useUsersState();
   const { data: users, loading, error } = state.users;
+  const { data: user } = state.user;
 
   useEffect(() => {
     async function fetchData() {
@@ -19,7 +20,6 @@ function UserContainer() {
     }
     fetchData();
   }, []);
-
   if (!users) return <div>데이터없음</div>;
   return (
     <div className="module_boxs">
@@ -27,7 +27,7 @@ function UserContainer() {
         <UserList userList={users} />
       </div>
       <div className="module_middle">
-        <UserInfo />
+        <UserInfo userInfo={user} />
       </div>
     </div>
   );
