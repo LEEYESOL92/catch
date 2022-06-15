@@ -1,11 +1,11 @@
 import React from "react";
-import Users from "./Users";
+import UserContainer from "./UserContainer";
 import { UsersProvider } from "./ContextAPI/UserInfoContext";
-
 function UserApp() {
   return (
     <UsersProvider>
-      <Users />
+      {/*<Users />*/}
+      <UserContainer />
     </UsersProvider>
   );
 }
