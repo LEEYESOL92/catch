@@ -2,6 +2,7 @@ import React, { createContext, useReducer, useContext, Dispatch } from "react";
 import axios, { AxiosError } from "axios";
 
 interface UserListT {
+  data: any;
   SuhumNo: string;
   ApplicantName: string;
   GraduateSchoolName: string;
